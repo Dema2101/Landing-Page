@@ -24,14 +24,14 @@ body{
 .header{                /* HEADER*/
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
+}
+.header img{
+    border-radius: 20px;
+    width: 150px; 
+    height: auto;
 }
 
-.logo{                  /* LOGO U HEADERU*/
-    color: #F9FAF8;
-    font-size: 24px;
-    font-weight: 800;
-}
 
 .lala li{               /* LINKOVI U HEADERU*/
     padding:0px 10px;
@@ -48,25 +48,92 @@ a{                       /* LINKOVI U HEADERU*/
 
 
 
-.hero  {
-display: flex;
-gap:40px;
-}
-
-.hero div{
-    flex:1;
-}
-
-img{
-    width: 400px;
-    height: auto;
-}
-/* 
-.hero-left{
+.hero {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-} */
+    gap: 40px;
+    flex-wrap: wrap;       
+    align-items: stretch;  
+}
+
+.hero > div {            /* PODJEDNAKA PODJELA HERO CONTAINERA LIJVO I DESNO*/
+    flex: 1;
+}
+
+
+.hero-right{         /* HERO POZICIONIRANJE SLIKE*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.hero-right img {    /* HERO SLIKA*/
+width: 400px;
+ flex-shrink: 0; 
+}
+
+
+
+
+
+
+.hero-left{                             /* HERO LIJEVI CONTAINER */
+display: flex;
+flex-direction: column;
+justify-content:center;
+gap: 10px;
+text-align: center;
+}
+
+.hero-naslov{                         /* HERO NASLOV*/
+    font-size: 36px;
+    font-weight: 900;
+    color: #F9Faf8;
+}
+.hero-text{                          /* HERO TEKST LIJEVO*/
+    line-height: 1.5;
+    font-size: 18px;
+    color: #c5c5c7;
+}
+
+
+.kontakt {                                    /* BUTTON KONTAKT */
+    align-self: center;
+  background-color: #111827;
+  border: 1px solid white;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 140px;
+}
+
+.kontakt:hover {
+  background-color: #374151;
+}
+
+.kontakt:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+} 
+
+
+
 
 
 
