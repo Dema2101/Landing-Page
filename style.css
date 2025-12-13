@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Courier, monospace;
+}
+
+
+body{  
+    min-height: 100vh;
+    display: flex;  
+    flex-direction: column;
+}
+
+
+
+.gore{                  /* HEADER i HERO ZAJEDNO */
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    padding: 20px 20vh; 
+    gap: 8vh;
+}
+
+.header{                /* HEADER*/
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+}
+
+.logo{                  /* LOGO U HEADERU*/
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.lala li{               /* LINKOVI U HEADERU*/
+    padding:0px 10px;
+    display: inline;
+    list-style-type: none;
+}
+a{                       /* LINKOVI U HEADERU*/
+    text-decoration: none;
+    font-size: 20px;
+    color: #c5c5c7;
+}
+
+
+
+
+
+.hero  {
+display: flex;
+gap:40px;
+}
+
+.hero div{
+    flex:1;
+}
+
+img{
+    width: 400px;
+    height: auto;
+}
+/* 
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} */
+
+
+
+
+/* 
+
+.info{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: flex end;
+}
+
+.testimonial{
+    background-color: brown;
+      display: flex;
+    justify-content: flex end;
+}
+
+.cta{
+      display: flex;
+    justify-content: flex end;
+    background-color: burlywood;
+}
+
+.footer{
+    
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1F2937;
+} */
