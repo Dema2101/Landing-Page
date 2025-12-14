@@ -47,7 +47,6 @@ a{                       /* LINKOVI U HEADERU*/
 
 
 
-
 .hero {
     display: flex;
     gap: 40px;
@@ -68,7 +67,8 @@ a{                       /* LINKOVI U HEADERU*/
 }
 .hero-right img {    /* HERO SLIKA*/
 width: 400px;
- flex-shrink: 0; 
+border: 5px solid #fff;
+border-radius: 5px;
 }
 
 
@@ -84,14 +84,14 @@ gap: 10px;
 text-align: center;
 }
 
-.hero-naslov{                         /* HERO NASLOV*/
+.hero-naslov, .info h3{                         /* HERO NASLOV*/
     font-size: 36px;
     font-weight: 900;
     color: #F9Faf8;
 }
 .hero-text{                          /* HERO TEKST LIJEVO*/
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 19px;
     color: #c5c5c7;
 }
 
@@ -138,14 +138,48 @@ text-align: center;
 
 
 
-/* 
 
 .info{
-    background-color: aquamarine;
     display: flex;
-    justify-content: flex end;
+    flex-direction: column;
+}
+.info h3{
+    margin: 30px 0px;
+    text-align: center;
+    font-weight: 900;
+    color: #111827;
 }
 
+.kartice{
+    padding: 0 10vw;
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap; 
+    align-items: baseline;
+    justify-content: space-around;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.card{
+    width: 220px; 
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+.card img{
+    align-self: center;
+    width: 220px;
+    height:220px;
+    border: 5px solid #111827;
+    border-radius: 3px;
+}
+
+
+/* 
 .testimonial{
     background-color: brown;
       display: flex;
@@ -163,4 +197,4 @@ text-align: center;
     display: flex;
     justify-content: flex-end;
     background-color: #1F2937;
-} */
+} */ 
